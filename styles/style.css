@@ -14,17 +14,16 @@
 
 .header {
   background: #2A2C2F;
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   align-items: center;
   justify-content: space-between;
-  margin: auto;
 }
 
 .header__logo {
   margin-left: 48px;
   margin-top: 28px;
 }
-
 
 .header__lang-links {
   list-style-type: none;
@@ -47,9 +46,58 @@
 }
 
 .header__lang-link:hover {
-
   opacity: .6;
 }
+
 .header__lang-link_ru {
   text-decoration: underline;
+}
+
+.lead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lead__image {
+  background-image: url('../images/lead-polka.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.lead__title {
+  width: 720px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+  margin: auto;
+}
+
+.lead__subtitle {
+  width: 640px;
+  text-align: center;
+  color: white;
+  margin: auto;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.lead__caption {
+  color: white;
+  align-self: flex-start;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
