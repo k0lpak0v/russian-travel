@@ -135,6 +135,7 @@
 
 @media screen and (max-width: 320px) {
   .lead__title {
+    width: 100%;
     font-size: 40px;
     line-height: 44px;
   }
@@ -142,6 +143,7 @@
 
 @media screen and (max-width: 375px) {
   .lead__title {
+    width: 100%;
     font-size: 40px;
     line-height: 44px;
   }
@@ -219,13 +221,14 @@
   line-height: 18px;
 }
 
-.photo-grid {
+.photo-grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 16px;
   max-width: 1184px;
   margin: 0 auto;
   padding: 0 48px 0 48px;
+  list-style: none;
 }
 
 .photo-grid__item {
@@ -273,6 +276,12 @@
   align-self: flex-end;
 }
 
+@media screen and (max-width: 320px) {
+  .place__website {
+    display: none;
+  }
+}
+
 .place__url-heading {
   font-family: 'Inter';
   font-style: normal;
@@ -298,6 +307,13 @@
   grid-row: 2/3;
 }
 
+@media screen and (max-width: 320px) {
+  .place__paragraphs {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+}
+
 .place__paragraph {
   font-family: 'Inter';
   font-style: normal;
@@ -306,4 +322,63 @@
   line-height: 30px;
   color: white;
   margin: 0 0 24px 0;
+}
+
+.cover {
+  max-width: 1184px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+.cover__background {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/cover-trains.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover__overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #2A2C2F;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cover__overlay:hover {
+    opacity: 0.8;
+}
+
+.cover__title {
+  text-align: center;
+  max-width: 560px;
+  width: 100%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  color: white;
+}
+
+.cover__subtitle {
+  text-align: center;
+  max-width: 360px;
+  width: 100%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: white;
 }
