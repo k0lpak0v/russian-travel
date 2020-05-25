@@ -14,7 +14,9 @@
 }
 
 .header {
-  background: #2A2C2F;
+  max-width: 1184px;
+  width: 100%;
+  margin: 0 auto;
   display: grid;
   grid-auto-flow: column;
   align-items: center;
@@ -327,12 +329,12 @@
 .cover {
   max-width: 1184px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 92px auto;
   position: relative;
 }
 
-.cover:hover .cover__overlay{
-opacity: 0.8;
+.cover:hover .cover__overlay {
+  opacity: 0.8;
 }
 
 .cover__image-container {
@@ -358,7 +360,7 @@ opacity: 0.8;
 }
 
 .cover__overlay:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .cover__title {
@@ -375,7 +377,6 @@ opacity: 0.8;
   position: absolute;
   top: calc(50% - 23.6%);
   left: calc(50% - 24%);
-
 }
 
 .cover__subtitle {
@@ -392,4 +393,71 @@ opacity: 0.8;
   margin: 32px 0 0 0;
   top: calc(50%);
   left: calc(50% - 15%);
+}
+
+.footer {
+  max-width: 1184px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer__links-container {
+  list-style-type: none;
+  padding: 0 0 24px 0;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 18px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
+  transition: .2s;
+}
+
+.footer__link:hover {
+  opacity: .6;
+}
+
+.footer__copyright {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 3px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  color: white;
+}
+
+.footer__author-mail {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  color: white;
+  transition: .2s;
+  text-decoration: none;
+  margin: 14px 0 14px 0;
+}
+
+.footer__author-mail:hover {
+  opacity: .6;
 }
