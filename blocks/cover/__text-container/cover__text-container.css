@@ -1,0 +1,16 @@
+.cover__text-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 32px;
+}
+
+@media screen and (max-width: 320px) {
+  .cover__text-container {
+    grid-gap: 16px;
+  }
+}

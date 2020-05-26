@@ -1,0 +1,16 @@
+.footer__author-mail {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  color: white;
+  transition: .2s;
+  text-decoration: none;
+  margin: 14px 0 14px 0;
+}
+
+.footer__author-mail:hover {
+  opacity: .6;
+}

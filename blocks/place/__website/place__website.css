@@ -1,0 +1,17 @@
+.place__website {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 510px) {
+  .place__website {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place__website {
+    display: none;
+  }
+}
