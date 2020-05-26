@@ -1,4 +1,4 @@
-.place__card {
+.place__item {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-column-gap: 40px;
@@ -7,20 +7,20 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .place__card {
+  .place__item {
     grid-column-gap: 32px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .place__card {
+  .place__item {
     margin: auto auto 0 auto;
     grid-column-gap: 28px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .place__card {
+  .place__item {
     margin: 48px auto 0 auto;
     grid-row-gap: 32px;
   }
