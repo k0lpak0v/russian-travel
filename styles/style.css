@@ -643,7 +643,7 @@
 .footer__links-container {
   width: 100%;
   list-style-type: none;
-  padding: 0 0 24px 0;
+  padding: 0 0;
   display: grid;
   grid-auto-flow: column;
   grid-gap: 18px;
