@@ -3,6 +3,12 @@
   grid-row: 2/3;
 }
 
+@media screen and (max-width: 768px) {
+  .place__paragraphs {
+    max-width: 352px;
+  }
+}
+
 @media screen and (max-width: 510px) {
   .place__paragraphs {
     grid-column: 1/2;
