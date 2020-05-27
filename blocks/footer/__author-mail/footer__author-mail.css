@@ -8,7 +8,7 @@
   color: white;
   transition: .2s;
   text-decoration: none;
-  margin: 14px 0 14px 0;
+  margin: 0 3px;
 }
 
 .footer__author-mail:hover {

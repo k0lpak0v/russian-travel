@@ -1,7 +1,7 @@
 .footer__copyright {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-gap: 3px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 -3px;
   align-items: flex-start;
   justify-content: flex-start;
   font-family: 'Inter';
