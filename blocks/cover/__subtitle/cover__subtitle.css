@@ -10,7 +10,6 @@
   align-self: flex-start;
   justify-content: center;
   margin: 0 auto;
-  -webkit-align-self: flex-start;
 }
 
 @media screen and (max-width: 510px) {

@@ -10,7 +10,6 @@
   align-self: flex-end;
   justify-content: center;
   margin: 0 auto;
-  -webkit-align-self: flex-end;
 }
 
 @media screen and (max-width: 320px) {
