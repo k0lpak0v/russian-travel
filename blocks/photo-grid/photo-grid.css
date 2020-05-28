@@ -1,2 +1,30 @@
 @import url(./__container/photo-grid__container.css);
 @import url(./__item/photo-grid__item.css);
+
+  .photo-grid__container {
+    max-width: 1184px;
+    min-height: 671px;
+}
+
+@media screen and (max-width: 1024px) {
+  .photo-grid__container {
+    max-width: 928px;
+    min-height: 942px;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .photo-grid__container {
+    max-width: 720px;
+    min-height: 1664px;
+
+  }
+}
+@media screen and (max-width: 320px) {
+  .photo-grid__container {
+    max-width: 288px;
+    min-height: 2724px;
+
+  }
+}
